@@ -1,28 +1,61 @@
-body {
-  display: grid;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: 10vw 30vw 10vw;
-  grid-gap: 1em;
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Milky+Nice|Roboto:200,400');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Milky Nice', serif;
 }
 
-header,
-footer {
-  grid-column: 1 / span 2;
+p, a {
+  font-family: 'Roboto', sans-serif;
 }
 
-/* Demo Specific Styles */
-body {
-  margin: 0 auto;
-  max-width: 56em;
-  padding: 1em 0;
-}
+* {
+    box-sizing: border-box; 
+  }
 
-header,
-main,
-aside,
-footer {
-  background: #eaeaea;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: Roboto;
+  }
+
+  #main {
+    display: flex;
+    flex: 1;
+  }
+
+  #main > article {
+    flex: 1;
+    order: 2;
+  }
+
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+
+  #main > nav {
+    background: #D7E8D4;
+    order: 1;
+  }
+
+  #main > aside {
+    background: beige;
+    order: 3;
+  }
+
+  header {
+    font-weight: bold;
+    color: #ffffff;
+  } 
+
+  header, footer {
+    background: #888888;
+    height: 5vh;
+  }
+
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
