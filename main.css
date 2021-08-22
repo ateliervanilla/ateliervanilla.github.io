@@ -6,6 +6,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 
+h2 {
+  font-size: clamp(16px, 2vw, 30px);
+}
 
 a {
   text-decoration: none;
