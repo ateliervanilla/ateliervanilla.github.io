@@ -11,6 +11,7 @@
 	<title>Atelier Vanilla</title>
 </head>
 <body>
+
 <header class="centeralign">
 	<figure class="logo">
 		<img src="vnl.png" width="100" height="100">
@@ -21,16 +22,15 @@
   	<div class="container">
   		<h2>Hi! I'm Vanilla, and I create art and designs for Smart Doll/Dollfie Dream!</h2>
 	  	<div class="cards">
-	  	  <img src="1.png" alt="Candy Series">
-		  <img src="2.png" alt="Fantasy Series">
-		  <img src="3.png" alt="Futaba">
-		  <img src="4.png" alt="Glitter">
-		  <img src="5.png" alt="Love">
-		  <img src="6.png" alt="Vibrant">
+	  	  <img src="1.png" id="Candy" class="modal-trigger" alt="Candy Series">
+		  <img src="2.png" id="Fantasy" class="modal-trigger" alt="Fantasy Series">
+		  <img src="3.png" id="Futaba" class="modal-trigger" alt="Futaba">
+		  <img src="4.png" id="Glitter" class="modal-trigger" alt="Glitter">
+		  <img src="5.png" id="Love" class="modal-trigger" alt="Love">
+		  <img src="6.png" id="Vibrant" class="modal-trigger" alt="Vibrant">
 	  	</div>
    	</div>    
 
-	  
 
   <footer class="centeralign">
   	<h2>Thank you for visiting!</h2>
@@ -42,6 +42,22 @@
 	  		
 		</div>
   </footer>
+
+<!-- modal - must sit outside main page layout -->
+  <div class="flex align-center align-vert modal modal--align">
+    <div class="modal__container">
+      <a class="modal__close modal__close--x" aria-hidden="true">&#x2715;</a>
+      <h3>Handmade Follow Me Eyes for Anime Style Smart Doll/Dollfie Dream</h3>
+      <img src="candy.jpg" class="candy">
+      <p> These eyes are made from glass domes with metallic print in 22mm! They are designed to fit "Anime Style" dolls such as Smart Doll and Dollfie
+      Dream with a subtle follow-me effect. </p>
+      <button class="btnEtsy"><a href="https://www.etsy.com/shop/AtelierVanilla" target="_blank">Buy in Etsy</a></button>
+      <button class="modal__close modal__close--btn">Cancel</button>
+    </div>
+  </div>
+  <!-- / modal -->
+
+ <script type="text/javascript" src="main.js"></script>
   	
 </body>
 </html>

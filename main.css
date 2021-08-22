@@ -125,7 +125,7 @@ a {
   }
   .cards img {
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-    max-width: 15vw;
+    max-width: 18vw;
     border-radius: 20px;
   }
 
@@ -133,3 +133,119 @@ a {
     opacity: 0.7;
     transition: 0.3s;
   }
+
+
+/*MODAL*/
+
+.modal { display: none; }
+.modal--show,
+.modal--hide { display: flex; } /* classes fired by js for animation control */
+
+/* This is on the wrapper for the whole modal */
+.modal--align {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.modal__container {
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  max-height: 70vh;
+  padding: 20px;
+  margin: 12px;
+  background: #fff;
+}
+
+/*Etsy button*/
+.btnEtsy {
+  border-radius: 15px;
+  font-family: 'Urbanist', serif;
+  background: #F1651F;
+  color: white;
+  border: 0;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btnEtsy:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.btnEtsy a {
+  color: white;
+}
+
+.btnEtsy a:hover {
+  text-decoration: underline;
+}
+
+/* Close or cancel button */
+
+.modal__close--btn {
+  border-radius: 15px;
+  font-family: 'Urbanist', serif;
+  background: #ffffcc;
+  border: 0;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.modal__close--btn:hover {
+  background: #ffcc66;
+  transition: 0.3s;
+}
+
+
+/* The .modal__close class is used in js but is modified '--x' here */
+.modal__close--x {
+  font-size: 24px; /* this is only because we use unicode for the X in this case */
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* As there is no href to avoid the hash being added to the URL when clicked we add a pointer */
+/* This 'x' is hidden from screen readers as there is an accessible close button in the modal */
+.modal__close--x:hover {
+  cursor: pointer;
+}
+
+/* Animations */
+/* Open */
+.modal.modal--show {
+  animation: modal-open 0.3s;
+}
+
+@keyframes modal-open {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+/* Close */
+.modal.modal--hide {
+  animation: modal-close 0.3s;
+}
+
+@keyframes modal-close {
+  0%    { opacity: 1; }
+  100%  { opacity: 0; }
+}
+
+.candy {
+  width: 200px;
+  height: 200px;
+}
