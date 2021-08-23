@@ -160,7 +160,7 @@ a {
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 600px;
-  max-height: 70vh;
+  max-height: 100vh;
   padding: 20px;
   margin: 12px;
   background: #fff;
@@ -213,7 +213,7 @@ a {
 .modal__close--x {
   font-size: 24px; /* this is only because we use unicode for the X in this case */
   position: absolute;
-  top: 3px;
+  top: 5px;
   right: 10px;
   bottom: 10px;
 }
@@ -248,4 +248,5 @@ a {
 .candy {
   width: 200px;
   height: 200px;
+  text-align: center;
 }
