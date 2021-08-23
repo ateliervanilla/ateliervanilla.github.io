@@ -163,7 +163,7 @@ a {
   top: 40%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 450px;
+  max-width: 600px;
   max-height: 100vh;
   padding: 20px;
   margin: 12px;
@@ -250,9 +250,8 @@ a {
 }
 
 .candy {
-  width: auto;
-  height: 20vh;
-  text-align: center;
+  width: 100%;
+  height: auto;
 }
 
 .buttons {
@@ -262,7 +261,7 @@ a {
 .modal-grid {
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
