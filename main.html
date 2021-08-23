@@ -22,12 +22,12 @@
   	<div class="container">
   		<h2>Hi! I'm Vanilla, and I create art and designs for Smart Doll/Dollfie Dream!</h2>
 	  	<div class="cards">
-	  	  <img src="1.png" id="Candy" onclick="openModal()" alt="Candy Series">
-		  <img src="2.png" id="Fantasy" onclick="openModal()" alt="Fantasy Series">
-		  <img src="3.png" id="Futaba" onclick="openModal()" alt="Futaba">
-		  <img src="4.png" id="Glitter" onclick="openModal()" alt="Glitter">
-		  <img src="5.png" id="Love" onclick="openModal()" alt="Love">
-		  <img src="6.png" id="Vibrant" onclick="openModal()" alt="Vibrant">
+	  	  <img src="1.png" id="Candy" onclick="openModal(this.id)" alt="Candy Series">
+		  <img src="2.png" id="Fantasy" onclick="openModal(this.id)" alt="Fantasy Series">
+		  <img src="3.png" id="Futaba" onclick="openModal(this.id)" alt="Futaba">
+		  <img src="4.png" id="Glitter" onclick="openModal(this.id)" alt="Glitter">
+		  <img src="5.png" id="Love" onclick="openModal(this.id)" alt="Love">
+		  <img src="6.png" id="Vibrant" onclick="openModal(this.id)" alt="Vibrant">
 	  	</div>
    	</div>    
 
@@ -47,7 +47,7 @@
   <div id="myModal" class="flex align-center align-vert modal modal--align">
     <div class="modal__container">
       <a class="modal__close modal__close--x" onclick="closeModal()" aria-hidden="true">&#x2715;</a>
-      <h3>Handmade Follow Me Eyes for Anime Style Smart Doll/Dollfie Dream</h3>
+      <h3 id="modalTitle">Handmade Follow Me Eyes for Anime Style Smart Doll/Dollfie Dream</h3>
       <img src="candy.jpg" class="candy">
       <p> These eyes are made from glass domes with metallic print in 22mm! They are designed to fit "Anime Style" dolls such as Smart Doll and Dollfie
       Dream with a subtle follow-me effect. </p>

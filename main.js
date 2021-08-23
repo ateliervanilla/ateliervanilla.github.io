@@ -1,7 +1,9 @@
 // Modal - JS
 
 
-function openModal() {
+function openModal(clicked_id) {
+
+  document.getElementById("modalTitle").innerHTML = clicked_id + "&nbsp;" + "Series";
   document.getElementById("myModal").style.display = "block";
 }
 
