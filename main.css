@@ -155,7 +155,7 @@ a {
 .modal__container {
   position: absolute;
   float: left;
-  left: 47%%;
+  left: 47%;
   top: 40%;
   transform: translate(-50%, -50%);
   width: 100%;
